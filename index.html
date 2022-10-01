@@ -4,48 +4,57 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Sign-Up Form</title>
 </head>
 <body>
-  <div class="background"></div>
-  <div class="signup-form">
-    <div class="greeting">Hi! It's not a real online service. 
-                          This is nothing but an assignment for Sign-Up Form Project from The Odin Project. 
-                          Please do not submit your personal info and password, but feel free to test this form using made up info. 
-                          <br>Thank you!!!
-                        </div>
-    <div class="form-input">
-      <p>Let's Do This!</p>
-      <form action="" method="post">
-        <div>
-          <label for="first-name">*FIRST NAME</label>
-          <input type="text" name="first-name" id="first-name" required>
+  <div class="content">
+    <div class="background">
+        <div class="logo">
+          <img src="odin-lined.png" alt="odin logo">
+          <p>THE ODIN PROJECT</p>
         </div>
-        <div>
-          <label for="last-name">LAST NAME</label>
-          <input type="text" name="last-name" id="last-name">
-        </div>
-        <div>
-          <label for="email">*E-MAIL</label>
-          <input type="email" name="email" id="email" required>
-        </div>
-        <div>
-          <label for="phone-number">PHONE NUMBER</label>
-          <input type="tel" name="phone-number" id="phone-number">
-        </div>
-        <div>
-          <label for="password">*PASSWORD</label>
-          <input type="password" name="password" id="password" required>
-        </div>
-        <div>
-          <label for="confirm">*CONFIRM PASSWORD</label>
-          <input type="password" name="confirm" id="confirm" required>
-        </div>
-        <button type="submit">CREATE ACCOUNT</button>
-      </form>
     </div>
-    <div class="login-area">
-      <p>Already have an account? <button type="button">Login</button></p>
+    <div class="signup-form">
+      <div class="greeting">
+        <p>Hi! It's not a real online service.</p>
+        <p>This is nothing but an assignment for Sign-Up Form Project from The Odin Project. 
+           Please do not submit your personal info and password, but feel free to test this form using made up info.</p> 
+        <p>Thank you!!!</p>       
+      </div>
+      <div class="form-input">
+        <p>Let's Do This!</p>
+        <form action="" method="post">
+          <div>
+            <label for="first-name">*FIRST NAME</label>
+            <input type="text" name="first-name" id="first-name" required>
+          </div>
+          <div>
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" id="last-name">
+          </div>
+          <div>
+            <label for="email">*E-MAIL</label>
+            <input type="email" name="email" id="email" required>
+          </div>
+          <div>
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" name="phone-number" id="phone-number">
+          </div>
+          <div>
+            <label for="password">*PASSWORD</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div>
+            <label for="confirm">*CONFIRM PASSWORD</label>
+            <input type="password" name="confirm" id="confirm" required>
+          </div>
+            <button class="sign-up" type="submit">CREATE ACCOUNT</button>
+        </form>
+      </div>
+      <div class="login-area">
+        <p>Already have an account? <button class="login" type="button">Login</button></p>
+      </div>
     </div>
   </div>
 </body>
